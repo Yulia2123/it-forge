@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.gallery-section{
+    padding: 64px 20px;
+    background-color: #f2fafa;
+}
+
+.gallery-title{
+    font-family: "Cabin", sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 1.2;
+    letter-spacing: 0.01em;
+    text-align: center;
+    color: #0d0b0a;
+    margin-bottom: 20px;
+}
+
+.gallery-text{
+    font-family: "Sarabun", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+    color: #0d0b0a;
+    margin-bottom: 48px;
+}
