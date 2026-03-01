@@ -1,0 +1,115 @@
+.testimonials-section {
+  background-color: #f2fafa;
+  width: 100%;
+  padding: 64px 0;
+}
+
+.testimonials-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.testimonials-title {
+  font-family: 'Cabin', sans-serif;
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+  color: #0d0b0a;
+  margin-bottom: 20px;
+}
+.testimonials-text {
+  font-family: 'Sarabun', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #0d0b0a;
+  margin-bottom: 24px;
+}
+.testimonials-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+}
+.testimonials-item {
+  width: 100%;
+}
+
+.testimonials-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 24px;
+  padding: 12px;
+  width: 100%;
+  max-width: 343px;
+  background: #dfebeb;
+}
+.testimonials-comment-text {
+  font-family: 'Sarabun', sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.6;
+  color: #0d0b0a;
+  margin-bottom: 32px;
+}
+.testimonials-avatar {
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 16px;
+}
+.testimonials-name {
+  font-family: 'Sarabun', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #0d0b0a;
+}
+.testimonials-job {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #0d0b0a;
+}
+@media screen and (min-width: 768px) {
+  .testimonials-section {
+    padding: 40px 0;
+  }
+  .testimonials-title {
+    font-size: 40px;
+    margin-bottom: 24px;
+  }
+  .testimonials-card {
+    max-width: 704px;
+  }
+  .testimonials-item:nth-child(2) .testimonials-comment-text {
+    margin-bottom: 102px;
+  }
+  .testimonials-item:nth-child(3) .testimonials-comment-text {
+    margin-bottom: 67px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .testimonials-section {
+    padding: 112px 0;
+  }
+  .testimonials-title {
+    font-size: 52px;
+  }
+
+  .testimonials-item {
+    width: calc((100% - 24px) / 2);
+  }
+  .testimonials-card {
+    max-width: 644px;
+  }
+  .testimonials-item:nth-child(2) .testimonials-comment-text {
+    margin-bottom: 100px;
+  }
+  .testimonials-item:nth-child(3) .testimonials-comment-text {
+    margin-bottom: 65px;
+  }
+}
