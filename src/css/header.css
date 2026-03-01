@@ -20,8 +20,16 @@ a{
 header{
   justify-content: center;
 }
-
-
+.close-menu{
+  width: 24px;
+  height: 24px;
+  background-color: transparent;
+  border-color: transparent;
+  outline: none;
+}
+.close-menu{
+  display: none;
+}
 .header-menu{
   z-index: 999;
   position: fixed;
@@ -62,16 +70,14 @@ header{
   align-items: center;
   justify-content: center;
   border-radius: 100px;
-
-
-}
-
-.join-now-text{
+  border: 1px solid #C2D9FC;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
   color: #0D0B0A;
 }
+
+
 @media screen and (min-width: 768px) {
   .header-navigation{
       margin-top: 18px;
@@ -108,6 +114,7 @@ header{
   .join-now-link{
   width: 105px;
   height: 42px;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .header-nav-list{
     display: flex;
@@ -115,5 +122,8 @@ header{
   }
   .burger-menu{
     display: none;
+  }
+  .join-now-link:hover,.join-now-link:focus {
+    opacity: 0.5;
   }
 }
