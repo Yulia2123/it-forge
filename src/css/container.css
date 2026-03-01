@@ -16,9 +16,9 @@
 }
 
 /* Desktop */
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 1336px) {
   .container {
-    max-width: 1336git px;
+    max-width: 1336px;
     padding-left: 64px;
     padding-right: 64px;
   }
