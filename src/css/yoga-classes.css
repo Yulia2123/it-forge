@@ -1,5 +1,5 @@
 .section-yoga-classes {
-background: #F2FAFA;
+    background: #F2FAFA;
 }
 p {
     font-family: 'Sarabun';
@@ -19,11 +19,8 @@ p {
 }
 
 .yoga-cl-text-top {
-
     font-weight: 600;
-       
-        line-height: 1.5;
-     
+        line-height: 1.5; 
         margin-bottom: 12px;
 }
 
@@ -42,7 +39,7 @@ p {
 
 .yoga-cl-text {
    
-           margin-bottom: 48px;
+    margin-bottom: 48px;
        
 }
 
@@ -56,7 +53,6 @@ p {
 
 .yoga-cl-card {
     width: 100%;
-    /* height: 240px; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -89,26 +85,26 @@ p {
 }
 
 .yoga-cl-btn {
-    display: block;
-    text-align: center;
-    font-family: 'Sarabun';
+        display: block;
+        text-align: center;
+        font-family: 'Sarabun';
         font-style: normal;
-    font-weight: 500;
+        font-weight: 500;
         font-size: 16px;
         line-height: 1.6;
         color: #0D0B0A;
-      padding: 10px 0;
+        padding: 10px 0;
         border: 1px solid #C2D9FC;
-            border-radius: 100px;
+        border-radius: 100px;
           
-            width: 100%;
-            height: 46px;
-            background: #C2D9FC;
+        width: 100%;
+        height: 46px;
+        background: #C2D9FC;
 }
 
 .yoga-cl-btn:hover,
 .yoga-cl-btn:focus {
-background: rgba(194, 217, 252, 0.5);
+    background: rgba(194, 217, 252, 0.5);
     border: 1px solid rgba(194, 217, 252, 0.5);
     color: rgba(13, 11, 10, 0.5);
 }
@@ -118,8 +114,8 @@ background: rgba(194, 217, 252, 0.5);
 @media screen and (min-width:768px) {
 
     .section-yoga-classes .container {
-            padding: 40px 32px;
-        }
+        padding: 40px 32px;
+    }
 
     .yoga-cl-text-top {
         margin-bottom: 16px;
@@ -137,18 +133,18 @@ background: rgba(194, 217, 252, 0.5);
     }
 
     .yoga-cl-list {
-    column-gap: 24px;
-    row-gap: 27px;
-    padding-bottom: 21px;
-    margin-bottom: 40px;
+        column-gap: 24px;
+        row-gap: 27px;
+        padding-bottom: 21px;
+        margin-bottom: 40px;
     }
 
-        .yoga-cl-img {
-            margin-bottom: 16px;
+    .yoga-cl-img {
+        margin-bottom: 16px;
         }
 
     .yoga-cl-card:last-child {
- flex-grow: 1;
+        flex-grow: 1;
 
     }
 
@@ -157,25 +153,18 @@ background: rgba(194, 217, 252, 0.5);
         border-radius: 16px;
     }
 
-        .yoga-cl-card-title {
-            margin-bottom: 0;
+    .yoga-cl-card-title {
+        margin-bottom: 0;
         }
 
-
-
-             
-
-        .yoga-cl-card {
-          
+    .yoga-cl-card {
         width: 340px;
-        padding-bottom: auto;
-           
         }
 
-        .yoga-cl-btn{
-                border-radius: 100px;
-                width: auto;     
-                padding: 10px 24px;
+    .yoga-cl-btn{
+        border-radius: 100px;
+        width: auto;     
+        padding: 10px 24px;
 }
 
 }
@@ -195,32 +184,32 @@ background: rgba(194, 217, 252, 0.5);
         width: 768px;
     }
 
-        .yoga-cl-list {
-            flex-wrap: nowrap;
-align-items: normal;
-padding: 0;
-        }
+    .yoga-cl-list {
+        flex-wrap: nowrap;
+        align-items: normal;
+        padding: 0;
+    }
 
-         .yoga-cl-card:last-child .yoga-cl-img {
+    .yoga-cl-card:last-child .yoga-cl-img {
           
-             height: 240px;
+        height: 240px;
         
             
-         }
+    }
 
-                  .yoga-cl-card:last-child {
-                      flex-grow: 0;
+    .yoga-cl-card:last-child {
+        flex-grow: 0;
         
-                  }
+    }
 
-          .yoga-cl-card {
-              width: 422px;
+    .yoga-cl-card {
+        width: 422px;
     
-          }
+    }
 
-                   .yoga-cl-img {
-                       margin-bottom: 32px;
-                   }
+    .yoga-cl-img {
+        margin-bottom: 32px;
+    }
 
     .yoga-cl-card-title {
         font-size: 36px;
