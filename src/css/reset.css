@@ -24,6 +24,8 @@ a {
 }
 
 button {
+  background-color: #c2d9fc;
+  border: 1px solid #c2d9fc;
   cursor: pointer;
 }
 

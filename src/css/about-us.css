@@ -112,8 +112,8 @@
   }
 }
 
-@media screen and (min-width: 1440px) {
-  .section-benefits {
+@media screen and (min-width: 1336px) {
+  .about-us-section {
     padding: 120px 0;
   }
 
