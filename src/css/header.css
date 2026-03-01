@@ -82,9 +82,6 @@ header{
     .active-link {
     position: relative;
   }
-  .active-link{
-    position: relative;
-  }
   .active-link::before{
     content: '';
     position: absolute;
