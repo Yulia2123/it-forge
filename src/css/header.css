@@ -70,10 +70,6 @@ header{
       margin-top: 18px;
       margin-bottom: 18px;
   }
-  .container{
-    padding-left: 32px;
-    padding-right: 32px;
-  }
   .header-logo-link{
   margin-right: auto;
   }
@@ -90,10 +86,6 @@ header{
     height: 4px;
     background-color: rgba(13, 11, 10, 0.5);
     
-  }
-  .container{
-    padding-left: 64px;
-    padding-right: 64px;
   }
   .join-now-link{
   width: 105px;
