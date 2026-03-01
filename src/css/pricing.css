@@ -149,6 +149,25 @@
   font-weight: 500;
   letter-spacing: 0em;
   cursor: pointer;
+
+  /* transition:
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+}
+
+.btn-join:hover,
+.btn-join:focus {
+  opacity: 50%;
+}
+
+.btn-join:active {
+  opacity: 100%;
+  background-color: transparent;
+}
+
+.btn-join:disabled {
+  opacity: 20%;
+  cursor: not-allowed;
 }
 
 @media (min-width: 768px) {
@@ -194,7 +213,7 @@
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1336px) {
   .pricing-item {
     width: calc((100% - 64px) / 3);
   }
