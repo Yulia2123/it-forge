@@ -1,7 +1,6 @@
 .hero-container {
     padding: 0;
     background-color: #F2FAFA;
-    max-width: 375px;
 }
 .hero-contant {
     padding: 48px 16px;
@@ -11,7 +10,7 @@
 .hero-title {
     font-weight: 400;
     font-size: 44px;
-    line-height: 120%;
+    line-height: 1.20;
     letter-spacing: 0.01em;
     color: #0D0B0A;
     margin-bottom: 20px;
@@ -19,7 +18,7 @@
 .hero-description {
     font-weight: 400;
     font-size: 16px;
-    line-height: 160%;
+    line-height: 1.60;
     color: #0D0B0A;
     margin-bottom: 24px;
 }
@@ -36,7 +35,7 @@
     align-items: center;
     border: 1px solid transparent;
     border-radius: 100px;
-    padding: 10px auto;
+    padding: 10px 24px;
     width: 100%;
     height: 46px;
     background-color: rgba(13, 11, 10, 0.05);
@@ -56,4 +55,32 @@
 .learn:focus {
     background-color: rgba(13, 11, 10, 0.05);
     opacity: 0.5;
+}
+
+@media screen and (min-width: 768px) {
+.hero-contant {
+    padding: 24px 32px;
+}
+.hero-title {
+    width: 423px;
+    margin-bottom: 8px;
+}
+.hero-description {
+    font-size: 18px;
+    margin-bottom: 32px;
+}
+.hero-navigation {
+    width: 305px;
+}
+.hero-navigation-list {
+    flex-direction: row;
+    justify-content: start;
+}
+.hero-navigation-item {
+    width: auto;
+}
+}
+
+@media screen and (min-width: 1336px) {
+
 }
