@@ -38,8 +38,8 @@ header{
 .header-navigation{
   display: flex;
   align-items: center;
-  margin-top: 14px;
-  margin-bottom: 14px;
+  padding-top: 16px;
+  padding-bottom: 16px;
 
 }
 .burger-menu{
@@ -67,11 +67,14 @@ header{
 
 @media screen and (min-width: 768px) {
   .header-navigation{
-      margin-top: 18px;
-      margin-bottom: 18px;
+      padding-top: 16px;
+      padding-bottom: 16px;
   }
   .header-logo-link{
   margin-right: auto;
+  }
+  .hero-page{
+    padding-top: 64px;
   }
 }
 @media screen and (min-width: 1336px){
@@ -101,5 +104,8 @@ header{
   }
   .join-now-link:hover,.join-now-link:focus {
     opacity: 0.5;
+  }
+  .hero-page{
+    padding-top: 72px;
   }
 }
