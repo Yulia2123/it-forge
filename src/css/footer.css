@@ -61,9 +61,33 @@ footer * {
   outline: none;
   font-size: 16px;
   line-height: 1.6;
+  transition:
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .text-field-footer::placeholder {
+  font-size: 16px;
+  line-height: 1.6;
+  color: rgba(13, 11, 10, 0.6);
+}
+
+.text-field-footer:user-invalid {
+  border-color: #b10000;
+  color: #b10000;
+}
+
+.text-field-footer:user-invalid::placeholder {
+  color: #b10000;
+}
+
+.text-field-footer:focus {
+  border-color: #fff;
+  color: #0d0b0a;
+  outline: none;
+}
+
+.text-field-footer:focus::placeholder {
   font-size: 16px;
   line-height: 1.6;
   color: rgba(13, 11, 10, 0.6);
@@ -81,11 +105,24 @@ footer * {
   line-height: 1.6;
   display: block;
   margin-bottom: 12px;
+  transition:
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
 }
 
 .join-btn:hover,
 .join-btn:focus {
   opacity: 0.5;
+  outline: none;
+}
+
+.join-btn:active,
+.join-btn:focus-visible {
+  color: #0d0b0a;
+  border: 1px solid #868584;
+  opacity: 1;
 }
 
 .privacy-policy-footer {
@@ -109,12 +146,13 @@ footer * {
 }
 
 .box-link-footer {
-  padding: 8px 0px;
   max-width: 279px;
   max-height: 38px;
+  padding: 8px 0px;
 }
 
 .box-link-footer a {
+  display: flex;
   font-size: 14px;
   line-height: 1.6;
 }
