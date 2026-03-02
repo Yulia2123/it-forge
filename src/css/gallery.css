@@ -39,6 +39,8 @@
     gap: 24px;
     flex-wrap: wrap;
     justify-content: center;
+    max-width: 335px;
+    margin: 0 auto;
 }
 
 .gallery-item{
@@ -59,11 +61,15 @@
     
     .gallery-container{
         margin-bottom: 80px;
-        max-width: 768px;
+        max-width: 704px;
     }
 
     .gallery-title{
         margin-bottom: 24px;
+    }
+
+    .gallery-list{
+        max-width: 704px;
     }
 
     .gallery-image{
@@ -76,12 +82,20 @@
         padding: 112px 64px;
     }
 
+    .gallery-container{
+        max-width: 768px;
+    }
+
     .gallery-title{
         font-size: 52px;
     }
 
     .gallery-text{
         font-weight: 500;
+    }
+
+    .gallery-list{
+        max-width: 1312px;
     }
 
     .gallery-item{
