@@ -56,16 +56,21 @@
     background-color: rgba(13, 11, 10, 0.05);
     opacity: 0.5;
 }
+.join:active,
+.learn:active {
+    opacity: 0.3;
+}
 
 @media screen and (min-width: 768px) {
 .hero-contant {
     padding: 24px 32px;
 }
 .hero-title {
-    width: 423px;
+    margin-right: 221px;
     margin-bottom: 8px;
 }
 .hero-description {
+    width: 641px;
     font-size: 18px;
     margin-bottom: 32px;
 }
@@ -81,6 +86,16 @@
 }
 }
 
-@media screen and (min-width: 1336px) {
+@media only screen and (min-width: 1336px) {
+    .hero-contant {
+    display: flex;
+    padding: 80px 64px;
+    flex-direction: row;
+    gap: 24px;
+}
+.hero-title {
+    margin-right: 0;
+    font-size: 72px;
+}
 
 }
