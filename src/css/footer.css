@@ -1,15 +1,29 @@
+footer * {
+  font-family: 'Sarabun', sans-serif;
+}
+
 .footer {
+  /* color: #0d0b0a; */
+  /* font-weight: 400; */
   background-color: #dfebeb;
   padding-top: 48px;
   padding-bottom: 48px;
 }
 
 .box-footer {
-  width: 343px;
+  max-width: 343px;
   background-color: #f8fbfe;
   border: 0px solid rgba(13, 11, 10, 0.15);
   border-radius: 16px;
   padding: 32px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 48px;
+}
+
+.logo-subscribe {
+  min-width: 279px;
+  height: 308px;
 }
 
 .logo-footer {
@@ -25,10 +39,8 @@
 }
 
 .subscribe-text-footer {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.6;
-  color: #0d0b0a;
   margin-bottom: 20px;
 }
 
@@ -37,7 +49,6 @@
   flex-direction: column;
   align-items: center;
   row-gap: 16px;
-  /* justify-content: center; */
 }
 
 .text-field-footer {
@@ -48,21 +59,17 @@
   border-radius: 12px;
   padding: 8px 12px;
   outline: none;
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.6;
-  color: #0d0b0a;
 }
 
 .text-field-footer::placeholder {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.6;
   color: rgba(13, 11, 10, 0.6);
 }
 
 .join-btn {
-  font-family: inherit;
   width: 279px;
   height: 46px;
   background-color: rgba(13, 11, 10, 0.05);
@@ -72,5 +79,56 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
-  color: #0d0b0a;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.join-btn:hover,
+.join-btn:focus {
+  opacity: 0.5;
+}
+
+.privacy-policy-footer {
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.box-link-connect {
+  max-width: 279px;
+  /* height: 428px; */
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+}
+
+.text-link-connect {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+.box-link-footer {
+  padding: 8px 0px;
+  max-width: 279px;
+  max-height: 38px;
+}
+
+.box-link-footer a {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.box-icon-footer a {
+  padding: 8px 0px;
+  max-width: 279px;
+  max-height: 40px;
+  display: flex;
+  align-items: center;
+  column-gap: 12px;
+}
+
+.copyright {
+  font-size: 14px;
+  line-height: 1.6;
 }
