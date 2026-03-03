@@ -157,16 +157,16 @@
 
 .btn-join:hover,
 .btn-join:focus {
-  opacity: 50%;
+  opacity: 0.5;
 }
 
 .btn-join:active {
-  opacity: 100%;
+  opacity: 1;
   background-color: transparent;
 }
 
 .btn-join:disabled {
-  opacity: 20%;
+  opacity: 0.2;
   cursor: not-allowed;
 }
 
