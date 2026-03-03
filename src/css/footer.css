@@ -22,8 +22,7 @@ footer * {
 }
 
 .logo-subscribe {
-  min-width: 279px;
-  height: 308px;
+  max-width: 279px;
 }
 
 .logo-footer {
@@ -132,7 +131,7 @@ footer * {
 
 .box-link-connect {
   max-width: 279px;
-  /* height: 428px; */
+  height: 428px;
   display: flex;
   flex-direction: column;
   row-gap: 40px;
@@ -169,4 +168,76 @@ footer * {
 .copyright {
   font-size: 14px;
   line-height: 1.6;
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .footer {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .box-footer {
+    max-width: 704px;
+    padding: 40px 32px;
+    /* display: flex;
+    flex-direction: column; */
+    row-gap: 40px;
+  }
+
+  .logo-subscribe {
+    max-width: 640px;
+  }
+
+  .logo-footer {
+    margin-bottom: 24px;
+  }
+
+  .subscribe-text-footer {
+    margin-bottom: 24px;
+  }
+
+  .subscribe-field {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    column-gap: 16px;
+    margin-bottom: 12px;
+  }
+
+  .text-field-footer {
+    width: 546px;
+    height: 42px;
+  }
+
+  .join-btn {
+    width: 78px;
+    display: block;
+    margin-bottom: 0px;
+  }
+
+  .box-link-connect {
+    max-width: 640px;
+    height: 202px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 40px;
+    align-items: flex-start;
+  }
+
+  .quick-links,
+  .social-connect {
+    width: 300px;
+  }
+
+  .box-link-footer,
+  .box-icon-footer a {
+    max-width: 300px;
+  }
 }
