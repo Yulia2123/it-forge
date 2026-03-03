@@ -8,6 +8,7 @@
     flex-direction: column;
 }
 .hero-title {
+    font-family: "Cabin", normal;
     font-weight: 400;
     font-size: 44px;
     line-height: 1.20;
@@ -16,6 +17,7 @@
     margin-bottom: 20px;
 }
 .hero-description {
+    font-family: "Sarabun", normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.60;
@@ -60,13 +62,21 @@
 .learn:active {
     opacity: 0.3;
 }
+.hero-navigation-link {
+    font-family: "Sarabun", medium;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.60;
+    color: #0D0B0A;
+}
 
 @media screen and (min-width: 768px) {
 .hero-contant {
     padding: 24px 32px;
 }
 .hero-title {
-    margin-right: 221px;
+    margin-right: 60px;
+    padding-right: 221px;
     margin-bottom: 8px;
 }
 .hero-description {
@@ -89,13 +99,15 @@
 @media only screen and (min-width: 1336px) {
     .hero-contant {
     display: flex;
-    padding: 80px 64px;
+    padding: 80px 16px;
     flex-direction: row;
     gap: 24px;
 }
 .hero-title {
-    margin-right: 0;
+    margin: 0;
+    padding: 0;
     font-size: 72px;
+    /* max-width: 644px; */
 }
 
 }
