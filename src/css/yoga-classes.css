@@ -1,24 +1,15 @@
-.section-yoga-classes {
-    background: #F2FAFA;
-}
-p {
-    font-family: 'Sarabun';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 1.6;
-        text-align: center;
-      
-        color: #0D0B0A;
-}
+
+
 .section-yoga-classes .container {
    display: flex;
    flex-direction: column;
    align-items: center;
-   padding: 64px 16px;
+   padding-top: 64px;
+   padding-bottom: 64px;
+  
 }
 
-.yoga-cl-text-top {
+.yoga-cl-text.top {
     font-weight: 600;
         line-height: 1.5; 
         margin-bottom: 12px;
@@ -38,16 +29,23 @@ p {
 }
 
 .yoga-cl-text {
-   
+    font-family: 'Sarabun';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.6;
+        text-align: center;
+        color: #0D0B0A;
     margin-bottom: 48px;
        
 }
 
 .yoga-cl-list {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     gap: 48px;
-    align-items: center;
+    align-items: flex-start;
     margin-bottom: 48px;
 }
 
@@ -55,7 +53,7 @@ p {
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+text-align: center;
 }
 
 .yoga-cl-img {
@@ -63,6 +61,7 @@ p {
     display: block;
     margin-bottom: 24px;
     border-radius: 16px;
+    width: 100%;
 }
 
 .yoga-cl-card-title {
@@ -75,13 +74,20 @@ p {
         text-align: center;
         color: #0D0B0A;
         margin-bottom: 20px;
+}
 
-
-      
+.accient {
+    font-family: 'Cabin';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 1.4;
+        letter-spacing: 0.01em;
+        color: #0D0B0A;
 }
 
 .card-text {
-    margin-bottom: 48px;
+        margin-bottom: 48px;
 }
 
 .yoga-cl-btn {
@@ -107,22 +113,28 @@ p {
     background: rgba(194, 217, 252, 0.5);
     border: 1px solid rgba(194, 217, 252, 0.5);
     color: rgba(13, 11, 10, 0.5);
+    outline: none;
+}
+
+.yoga-cl-btn:active {
+    border: 1px solid rgba(194, 217, 252, 1);
+    background: none;
+    color: rgba(13, 11, 10, 1);
 }
 
 @media screen and (min-width:768px) {
 
     .section-yoga-classes .container {
-        padding: 40px 32px;
+       padding-top: 40px;
+       padding-bottom: 40px;
     }
 
-    .yoga-cl-text-top {
+    .yoga-cl-text.top {
         margin-bottom: 16px;
     }
 
     .yoga-cl-title {
-           
         margin-bottom: 24px;
-    
     }
 
     .yoga-cl-text {
@@ -139,25 +151,24 @@ p {
 
     .yoga-cl-img {
         margin-bottom: 16px;
-        }
-
-    .yoga-cl-card:last-child {
-        flex-grow: 1;
-
-    }
-
-    .yoga-cl-card:last-child .yoga-cl-img {
-        height: 282px;
-        border-radius: 16px;
+        height: 240px;
     }
 
     .yoga-cl-card-title {
         margin-bottom: 0;
-        }
+    }
 
     .yoga-cl-card {
         width: 340px;
-        }
+    }
+
+    .yoga-cl-card.q {
+        flex-basis: 100%;
+    }
+
+    .yoga-cl-card.q .yoga-cl-img {
+        height: 282px;
+    }
 
     .yoga-cl-btn{
         border-radius: 100px;
@@ -165,13 +176,16 @@ p {
         padding: 10px 24px;
 }
 
+
+
 }
 
-@media screen and (min-width:1440px) {
+@media screen and (min-width:1336px) {
     
     .section-yoga-classes .container {
-            padding: 112px 64px;
-        }
+        padding-bottom: 112px;
+        padding-top: 112px;
+    }
 
     .yoga-cl-title {
         font-size: 52px;
@@ -183,30 +197,27 @@ p {
     }
 
     .yoga-cl-list {
-        flex-wrap: nowrap;
+        display: flex;
+        justify-content: space-between;
         align-items: normal;
         padding: 0;
     }
 
-    .yoga-cl-card:last-child .yoga-cl-img {
-          
-        height: 240px;
-        
-            
-    }
-
-    .yoga-cl-card:last-child {
-        flex-grow: 0;
-        
-    }
-
     .yoga-cl-card {
-        width: 422px;
-    
+        width: 386px;
+    }
+
+    .yoga-cl-card.q {
+        width: 386px;
+        flex-basis: auto;
     }
 
     .yoga-cl-img {
         margin-bottom: 32px;
+    }
+
+    .yoga-cl-card.q .yoga-cl-img {
+        height: 240px;
     }
 
     .yoga-cl-card-title {
@@ -217,6 +228,4 @@ p {
     .accient {
         display: none;
     }
-
-        
 }

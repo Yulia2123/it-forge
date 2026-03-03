@@ -1,6 +1,6 @@
 <section class="section-yoga-classes">
   <div class="container">
-    <p class="yoga-cl-text-top">Explore</p>
+    <p class="yoga-cl-text top">Explore</p>
     <h2 class="yoga-cl-title">Discover Our Most Popular Yoga Programs</h2>
     <p class="yoga-cl-text">
       Join our community and elevate your practice with our expertly designed
@@ -21,9 +21,8 @@
           height="240"
         />
         <h3 class="yoga-cl-card-title">
-          Beginner Yoga: Foundations<span class="accient"
-            >for New Practitioners</span
-          >
+          Beginner Yoga: Foundations
+          <span class="accient">for New Practitioners</span>
         </h3>
         <p class="card-text">
           Learn the basics of yoga in a supportive environment.
@@ -48,18 +47,37 @@
           Experience a dynamic sequence that connects breath and movement.
         </p>
       </li>
-      <li class="yoga-cl-card">
-        <img
-          class="yoga-cl-img"
-          srcset="
-            ./img/webp/yoga-classes/yoga3.png    1x,
-            ./img/webp/yoga-classes/yoga3@2x.png 2x
-          "
-          src="./img/webp/yoga-classes/yoga3.png"
-          alt="Meditation"
-          width="704"
-          height="282"
-        />
+      <li class="yoga-cl-card q">
+        <picture>
+          <source
+            srcset="
+              /img/webp/yoga-classes/yoga3-d.png    1x,
+              /img/webp/yoga-classes/yoga3-d@2x.png 2x
+            "
+            media="(min-width: 1336px)"
+          />
+          <source
+            srcset="
+              /img/webp/yoga-classes/yoga3-t.png    1x,
+              /img/webp/yoga-classes/yoga3-t@2x.png 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="
+              /img/webp/yoga-classes/yoga3-m.png    1x,
+              /img/webp/yoga-classes/yoga3-m@2x.png 2x
+            "
+            media="(min-width: 320px) and (max-width: 375px)"
+          />
+          <img
+            class="yoga-cl-img"
+            src=" /img/webp/yoga-classes/yoga3-m.png"
+            alt="Maditation"
+            width="704"
+            height="282"
+          />
+        </picture>
         <h3 class="yoga-cl-card-title">
           Restorative Yoga: Deep Relaxation and Healing
         </h3>
