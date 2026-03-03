@@ -47,6 +47,8 @@
     width: calc((100% - 24px) / 2);
     max-width: 340px;
     height: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .gallery-image{
