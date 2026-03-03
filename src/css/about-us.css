@@ -9,7 +9,7 @@
 .about-us-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 72px;
+  gap: 48px;
   margin: 0;
   padding-left: 0;
   list-style: none;
@@ -111,22 +111,34 @@
 }
 
 @media screen and (min-width: 1336px) {
-  .about-us-section {
-    padding: 120px 0;
+  .about-us-container {
+    /* padding-left: 64px;
+    padding-right: 64px; */
+    max-width: 100%; /* чтобы контейнер занимал всю ширину */
   }
 
-  .benefits-item {
-    margin-bottom: 0;
+  .about-us-section {
+    padding: 0 auto 120px;
   }
 
   .about-us-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 40px 24px;
+    gap: 24px;
+    justify-content: flex-start;
   }
 
-  .benefits-item {
+  /* .benefits-item {
     width: calc((100% - 72px) / 4);
+    margin-bottom: 0;
+  } */
+  .benefits-item {
+    flex: 0 1 calc((100% - 72px) / 4);
+    max-width: none;
+    min-width: 0;
+    margin-top: 24px;
+    padding: 0;
+    box-sizing: border-box;
   }
 
   .profession-benefits {
@@ -137,7 +149,7 @@
     font-size: 28px;
     /* line-height: 39px; */
     line-height: 1.4;
-    white-space: wrap;
+    white-space: normal;
   }
 
   .second-title {
