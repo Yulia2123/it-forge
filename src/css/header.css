@@ -58,7 +58,9 @@ header{
   color: #0D0B0A;
   font-family: 'Sarabun', sans-serif;
 }
-
+.header-nav-list{
+   font-family: 'Sarabun', sans-serif;
+}
 
 @media screen and (min-width: 768px) {
   .header-navigation{
@@ -91,6 +93,7 @@ header{
   .header-nav-list{
     display: flex;
     column-gap: 32px;
+
   }
   .burger-menu{
     display: none;
