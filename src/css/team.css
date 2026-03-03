@@ -122,11 +122,12 @@
   }
 
   .team-list {
-    row-gap: 67px;
+    row-gap: 64px;
     margin-bottom: 112px;
   }
 
   .team-list-item {
+    height: 605px;
     width: calc((100% - 48px) / 3);
   }
 }
