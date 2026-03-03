@@ -18,7 +18,10 @@ footer * {
   padding: 32px;
   display: flex;
   flex-direction: column;
-  row-gap: 48px;
+}
+
+.logo-link-connect-wrapper {
+  margin-bottom: 48px;
 }
 
 .logo-subscribe {
@@ -135,6 +138,7 @@ footer * {
   display: flex;
   flex-direction: column;
   row-gap: 40px;
+  margin-top: 40px;
 }
 
 .text-link-connect {
@@ -186,9 +190,10 @@ footer * {
   .box-footer {
     max-width: 704px;
     padding: 40px 32px;
-    /* display: flex;
-    flex-direction: column; */
-    row-gap: 40px;
+  }
+
+  .logo-link-connect-wrapper {
+    margin-bottom: 40px;
   }
 
   .logo-subscribe {
@@ -225,7 +230,6 @@ footer * {
   .box-link-connect {
     max-width: 640px;
     height: 202px;
-    display: flex;
     flex-direction: row;
     column-gap: 40px;
     align-items: flex-start;
@@ -239,5 +243,62 @@ footer * {
   .box-link-footer,
   .box-icon-footer a {
     max-width: 300px;
+  }
+}
+
+/* Desktop */
+@media only screen and (min-width: 1336px) {
+  .container {
+    max-width: 1336px;
+    padding-left: 64px;
+    padding-right: 64px;
+  }
+
+  .footer {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+
+  .box-footer {
+    max-width: 1312px;
+    padding: 48px;
+    row-gap: 0;
+  }
+
+  .logo-link-connect-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    column-gap: 250px;
+    margin-bottom: 9px;
+  }
+
+  .logo-subscribe {
+    max-width: 595px;
+  }
+
+  .text-field-footer {
+    width: 501px;
+  }
+
+  .join-btn {
+    width: 78px;
+    display: block;
+  }
+
+  .box-link-connect {
+    max-width: 371px;
+    height: 202px;
+    margin-top: 0;
+  }
+
+  .quick-links,
+  .social-connect {
+    width: 165px;
+  }
+
+  .box-link-footer,
+  .box-icon-footer a {
+    max-width: 165px;
   }
 }
