@@ -21,6 +21,7 @@
   font-weight: 400;
   font-size: 16px;
   margin-bottom: 48px;
+  text-align: center;
 }
 
 .team-member-photo {
@@ -32,19 +33,12 @@
   margin-bottom: 20px;
 }
 
-.team-list-item:nth-child(2) .team-member-photo {
-  object-position: center top;
-}
-
-.team-list-item:nth-child(5) .team-member-photo {
-  object-position: center top;
-}
-
 .team-list {
   display: flex;
   flex-direction: column;
   row-gap: 48px;
   margin-bottom: 64px;
+  text-align: center;
 }
 
 .team-member-title {
@@ -62,6 +56,15 @@
   align-items: center;
   justify-content: center;
   gap: 14px;
+}
+
+.icon-link {
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-link:hover,
+.icon-link:focus {
+  opacity: 0.5;
 }
 
 @media screen and (min-width: 768px) {
