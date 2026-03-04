@@ -78,7 +78,7 @@
   }
   .hero-title {
     margin-right: 60px;
-    padding-right: 221px;
+    max-width: 423px;
     margin-bottom: 8px;
   }
   .hero-description {
@@ -99,9 +99,13 @@
 }
 
 @media only screen and (min-width: 1336px) {
-  .hero-contant {
+.hero-page {
+    padding-bottom: 80px;
+    }
+.hero-contant {
     display: flex;
-    padding: 80px 16px;
+    margin-top: 80px;
+    padding: 0 16px;
     flex-direction: row;
     gap: 24px;
   }
@@ -109,6 +113,5 @@
     margin: 0;
     padding: 0;
     font-size: 72px;
-    /* max-width: 644px; */
-  }
+    max-width: 644px;
 }
