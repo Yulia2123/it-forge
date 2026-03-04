@@ -1,24 +1,59 @@
 :root {
-  font-size: 16px;
-  line-height: 1.5;
   font-weight: 400;
-
   color: #0d0b0a;
   background-color: rgba(255, 255, 255, 0.87);
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+  box-sizing: border-box;
+}
+
+* {
+  font-size: 16px;
+  line-height: 1.5;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style: none;
 }
 
 body {
-  font-family: 'Roboto', 'Sarabun', 'Cabin', sans-serif;
+  font-family: 'Roboto', "Sarabun", 'Cabin', sans-serif;
   display: flex;
   flex-direction: column;
   min-width: 100%;
   margin: 0;
+  background: #f2fafa;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 main {
