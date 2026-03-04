@@ -63,7 +63,8 @@ footer * {
   outline: none;
   font-size: 16px;
   line-height: 1.6;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  transition:
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -95,8 +96,8 @@ footer * {
 }
 
 .join-btn {
-  width: 279px;
-  height: 46px;
+  max-width: 279px;
+  max-height: 46px;
   background-color: rgba(13, 11, 10, 0.05);
   border: 1px solid #fff;
   border-radius: 100px;
@@ -104,9 +105,12 @@ footer * {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
-  display: block;
-  margin-bottom: 12px;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 12px auto;
+  transition:
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   outline: none;
@@ -158,6 +162,14 @@ footer * {
   line-height: 1.6;
 }
 
+.text-link {
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.text-link:hover,
+.text-link:focus {
+  opacity: 0.5;
+}
+
 .box-icon-footer a {
   padding: 8px 0px;
   max-width: 279px;
@@ -165,6 +177,14 @@ footer * {
   display: flex;
   align-items: center;
   column-gap: 12px;
+}
+
+.icon-link-footer {
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.icon-link-footer:hover,
+.icon-link-footer:focus {
+  opacity: 0.5;
 }
 
 .copyright {
@@ -220,8 +240,7 @@ footer * {
   }
 
   .join-btn {
-    width: 78px;
-    display: block;
+    max-width: 78px;
     margin-bottom: 0px;
   }
 
@@ -254,8 +273,6 @@ footer * {
 
   .footer {
     padding: 64px;
-    /* padding-top: 64px;
-    padding-bottom: 64px; */
   }
 
   .box-footer {
@@ -280,16 +297,10 @@ footer * {
     width: 501px;
   }
 
-  .join-btn {
-    width: 78px;
-    display: block;
-  }
-
   .box-link-connect {
     max-width: 371px;
     height: 202px;
     margin-top: 0;
-    /* gap: 40px; */
   }
 
   .quick-links,
