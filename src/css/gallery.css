@@ -1,0 +1,122 @@
+/*---------GALLERY SECTION---------*/
+
+.gallery-section{
+    width: 100%;
+    padding: 64px 0;
+    background-color: #f2fafa;
+}
+
+.gallery-general-container{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.gallery-container{
+    padding: 0;
+    margin-bottom: 48px;
+    max-width: 335px;
+}
+
+.gallery-title{
+    font-family: "Cabin", sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 1.2;
+    letter-spacing: 0.01em;
+    text-align: center;
+    color: #0d0b0a;
+    margin-bottom: 20px;
+}
+
+.gallery-text{
+    font-family: "Sarabun", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+    color: #0d0b0a;
+}
+
+.gallery-container-wrapper{
+    padding: 0;
+}
+
+.gallery-list{
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 335px;
+    margin: 0 auto;
+}
+
+.gallery-item{
+    width: calc((100% - 24px) / 2);
+    max-width: 340px;
+    height: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.gallery-image{
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (min-width: 768px) {
+    .gallery-section{
+        padding: 40px 0;
+    }
+
+    .gallery-general-container{
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+    
+    .gallery-container{
+        margin-bottom: 80px;
+        max-width: 704px;
+    }
+
+    .gallery-title{
+        margin-bottom: 24px;
+    }
+
+    .gallery-list{
+        max-width: 704px;
+    }
+}
+
+@media screen and (min-width: 1336px) {
+    .gallery-section{
+        padding: 112px 0;
+    }
+
+    .gallery-general-container{
+        padding-left: 64px;
+        padding-right: 64px;
+        max-width: 1440px;
+    }
+
+    .gallery-container{
+        max-width: 768px;
+    }
+
+    .gallery-title{
+        font-size: 52px;
+    }
+
+    .gallery-text{
+        font-weight: 500;
+    }
+
+    .gallery-list{
+        max-width: 1312px;
+    }
+
+    .gallery-item{
+        width: calc((100% - 48px) / 3);
+        max-width: 421px;
+    }
+}
+
