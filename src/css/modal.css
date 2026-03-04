@@ -24,10 +24,7 @@
 
 .modal {
   position: relative;
-  padding-top: 64px;
-  padding-bottom: 112px;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding: 64px 16px 112px 16px;
 
   background-color: #dfebeb;
 
@@ -59,7 +56,7 @@
   opacity: 0.5;
 }
 
-.modal-submit-btn:active .modal-close-icon {
+.modal-close-btn:active .modal-close-icon {
   opacity: 0.3;
 }
 
@@ -189,4 +186,53 @@
 .modal-submit-btn:disabled {
   opacity: 20%;
   cursor: not-allowed;
+}
+
+@media screen and (min-width: 768px) {
+  .modal-overlay {
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    padding: 64px 92px;
+
+    width: 704px;
+    height: auto;
+
+    border-radius: 16px;
+  }
+
+  .modal-title {
+    font-size: 52px;
+  }
+
+  .modal-item-title {
+    font-size: 22px;
+  }
+
+  .modal-item-price {
+    font-size: 36px;
+  }
+
+  .input-group-row {
+    display: flex;
+    gap: 24px;
+    justify-content: space-between;
+  }
+
+  .input-group-row .input-group {
+    flex: 1;
+  }
+
+  .modal-submit-btn {
+    width: auto;
+    padding: 10px 24px;
+    min-width: 155px;
+    margin: 0 auto;
+  }
 }
