@@ -1,231 +1,221 @@
-
-
 .section-yoga-classes .container {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   padding-top: 64px;
-   padding-bottom: 64px;
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 64px;
+  padding-bottom: 64px;
 }
 
 .yoga-cl-text.top {
-    font-weight: 600;
-        line-height: 1.5; 
-        margin-bottom: 12px;
+  font-weight: 600;
+  line-height: 1.5;
+  margin-bottom: 12px;
 }
 
 .yoga-cl-title {
-    font-family: 'Cabin';
-        font-style: normal;
-    font-weight: 400;
-        font-size: 40px;
-        line-height: 1.2;
-        letter-spacing: 0.01em;
-        text-align: center;
-        color: #0D0B0A;
-        margin-bottom: 20px;
-        
+  font-family: 'Cabin';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: #0d0b0a;
+  margin-bottom: 20px;
 }
 
 .yoga-cl-text {
-    font-family: 'Sarabun';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 1.6;
-        text-align: center;
-        color: #0D0B0A;
-    margin-bottom: 48px;
-       
+  font-family: 'Sarabun';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  color: #0d0b0a;
+  margin-bottom: 48px;
 }
 
 .yoga-cl-list {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 48px;
-    align-items: flex-start;
-    margin-bottom: 48px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px;
+  align-items: flex-start;
+  margin-bottom: 48px;
 }
 
 .yoga-cl-card {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-text-align: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 
 .yoga-cl-img {
-    object-fit: cover;
-    display: block;
-    margin-bottom: 24px;
-    border-radius: 16px;
-    width: 100%;
+  object-fit: cover;
+  display: block;
+  margin-bottom: 24px;
+  border-radius: 16px;
+  width: 100%;
 }
 
 .yoga-cl-card-title {
-    font-family: 'Cabin';
-        font-style: normal;
-    font-weight: 400;
-        font-size: 24px;
-        line-height: 1.4;
-        letter-spacing: 0.01em;
-        text-align: center;
-        color: #0D0B0A;
-        margin-bottom: 20px;
+  font-family: 'Cabin';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.4;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: #0d0b0a;
+  margin-bottom: 20px;
 }
 
 .accient {
-    font-family: 'Cabin';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 24px;
-        line-height: 1.4;
-        letter-spacing: 0.01em;
-        color: #0D0B0A;
+  font-family: 'Cabin';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.4;
+  letter-spacing: 0.01em;
+  color: #0d0b0a;
 }
 
 .card-text {
-        margin-bottom: 48px;
+  margin-bottom: 48px;
 }
 
 .yoga-cl-btn {
-        display: block;
-        text-align: center;
-        font-family: 'Sarabun';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 1.6;
-        color: #0D0B0A;
-        padding: 10px 0;
-        border: 1px solid #C2D9FC;
-        border-radius: 100px;
-          
-        width: 100%;
-        height: 46px;
-        background: #C2D9FC;
+  display: block;
+  text-align: center;
+  font-family: 'Sarabun';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #0d0b0a;
+  padding: 10px 0;
+  border: 1px solid #c2d9fc;
+  border-radius: 100px;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  width: 100%;
+  height: 46px;
+  background: #c2d9fc;
 }
 
 .yoga-cl-btn:hover,
 .yoga-cl-btn:focus {
-    background: rgba(194, 217, 252, 0.5);
-    border: 1px solid rgba(194, 217, 252, 0.5);
-    color: rgba(13, 11, 10, 0.5);
-    outline: none;
+  background: rgba(194, 217, 252, 0.5);
+  border: 1px solid rgba(194, 217, 252, 0.5);
+  color: rgba(13, 11, 10, 0.5);
+  outline: none;
 }
 
 .yoga-cl-btn:active {
-    border: 1px solid rgba(194, 217, 252, 1);
-    background: none;
-    color: rgba(13, 11, 10, 1);
+  border: 1px solid rgba(194, 217, 252, 1);
+  background: none;
+  color: rgba(13, 11, 10, 1);
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
+  .section-yoga-classes .container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
 
-    .section-yoga-classes .container {
-       padding-top: 40px;
-       padding-bottom: 40px;
-    }
+  .yoga-cl-text.top {
+    margin-bottom: 16px;
+  }
 
-    .yoga-cl-text.top {
-        margin-bottom: 16px;
-    }
+  .yoga-cl-title {
+    margin-bottom: 24px;
+  }
 
-    .yoga-cl-title {
-        margin-bottom: 24px;
-    }
+  .yoga-cl-text {
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
 
-    .yoga-cl-text {
-        font-size: 18px;
-        margin-bottom: 40px;
-    }
+  .yoga-cl-list {
+    column-gap: 24px;
+    row-gap: 27px;
+    padding-bottom: 21px;
+    margin-bottom: 40px;
+  }
 
-    .yoga-cl-list {
-        column-gap: 24px;
-        row-gap: 27px;
-        padding-bottom: 21px;
-        margin-bottom: 40px;
-    }
+  .yoga-cl-img {
+    margin-bottom: 16px;
+    height: 240px;
+  }
 
-    .yoga-cl-img {
-        margin-bottom: 16px;
-        height: 240px;
-    }
+  .yoga-cl-card-title {
+    margin-bottom: 0;
+  }
 
-    .yoga-cl-card-title {
-        margin-bottom: 0;
-    }
+  .yoga-cl-card {
+    width: 340px;
+  }
 
-    .yoga-cl-card {
-        width: 340px;
-    }
+  .yoga-cl-card.q {
+    flex-basis: 100%;
+  }
 
-    .yoga-cl-card.q {
-        flex-basis: 100%;
-    }
+  .yoga-cl-card.q .yoga-cl-img {
+    height: 282px;
+  }
 
-    .yoga-cl-card.q .yoga-cl-img {
-        height: 282px;
-    }
-
-    .yoga-cl-btn{
-        border-radius: 100px;
-        width: auto;     
-        padding: 10px 24px;
+  .yoga-cl-btn {
+    border-radius: 100px;
+    width: auto;
+    padding: 10px 24px;
+  }
 }
 
+@media screen and (min-width: 1336px) {
+  .section-yoga-classes .container {
+    padding-bottom: 112px;
+    padding-top: 112px;
+  }
 
+  .yoga-cl-title {
+    font-size: 52px;
+    width: 768px;
+  }
 
-}
+  .yoga-cl-text {
+    width: 768px;
+  }
 
-@media screen and (min-width:1336px) {
-    
-    .section-yoga-classes .container {
-        padding-bottom: 112px;
-        padding-top: 112px;
-    }
+  .yoga-cl-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: normal;
+    padding: 0;
+  }
 
-    .yoga-cl-title {
-        font-size: 52px;
-        width: 768px;
-    }
+  .yoga-cl-card {
+    width: 386px;
+  }
 
-    .yoga-cl-text {
-        width: 768px;
-    }
+  .yoga-cl-card.q {
+    width: 386px;
+    flex-basis: auto;
+  }
 
-    .yoga-cl-list {
-        display: flex;
-        justify-content: space-between;
-        align-items: normal;
-        padding: 0;
-    }
+  .yoga-cl-img {
+    margin-bottom: 32px;
+  }
 
-    .yoga-cl-card {
-        width: 386px;
-    }
+  .yoga-cl-card.q .yoga-cl-img {
+    height: 240px;
+  }
 
-    .yoga-cl-card.q {
-        width: 386px;
-        flex-basis: auto;
-    }
+  .yoga-cl-card-title {
+    font-size: 36px;
+    margin-bottom: 24px;
+  }
 
-    .yoga-cl-img {
-        margin-bottom: 32px;
-    }
-
-    .yoga-cl-card.q .yoga-cl-img {
-        height: 240px;
-    }
-
-    .yoga-cl-card-title {
-        font-size: 36px;
-        margin-bottom: 24px;
-    }
-
-    .accient {
-        display: none;
-    }
+  .accient {
+    display: none;
+  }
 }
