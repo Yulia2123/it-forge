@@ -9,7 +9,7 @@
 .about-us-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 72px;
+  gap: 48px;
   margin: 0;
   padding-left: 0;
   list-style: none;
@@ -17,6 +17,7 @@
 .benefits-item {
   /*width: calc((100% - 72px) / 4);*/
   width: 100%;
+  /* padding-top: 48px; */
 }
 
 .second-title {
@@ -34,12 +35,13 @@
   font-family: 'Cabin', sans-serif;
   font-weight: 400;
   font-size: 24px;
-  margin-top: 48px;
+  /* margin-top: 48px; */
   /* line-height: 34px; */
   line-height: 1.42;
   letter-spacing: 0.01em;
   text-align: center;
   color: #0d0b0a;
+  white-space: nowrap;
 }
 
 .profession-benefits {
@@ -47,6 +49,7 @@
   font-weight: 400;
   font-size: 16px;
   margin-top: 20px;
+  margin-bottom: 48px;
   /* line-height: 26px; */
   line-height: 1.6;
   text-align: center;
@@ -66,6 +69,21 @@
   align-items: center;
   text-align: center;
   margin-top: 48px;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button-about-us:hover,
+.button-about-us:focus {
+  opacity: 0.5;
+}
+
+.button-about-us:active {
+  opacity: 1;
+  background-color: transparent;
+}
+
+.button-about-us:disabled {
+  opacity: 0.2;
 }
 
 @media screen and (min-width: 768px) {
@@ -78,7 +96,7 @@
     gap: 46px 24px;
     display: flex;
     flex-wrap: wrap;
-    gap: 72px 24px;
+    /* gap: 72px 24px; */
   }
   /* .benefits-list {
   } */
@@ -94,10 +112,6 @@
     width: calc((100% - 24px) / 2);
   }
 
-  .section-benefits-icon {
-    display: none;
-  }
-
   .button-about-us {
     width: 110px;
     height: 46px;
@@ -110,25 +124,42 @@
     margin: 40px auto 0 auto;
     white-space: nowrap;
   }
+
+  .button-about-us:hover,
+  .button-about-us:focus {
+    opacity: 0.5;
+  }
 }
 
-@media screen and (min-width: 1440px) {
-  .section-benefits {
-    padding: 120px 0;
+@media screen and (min-width: 1336px) {
+  .about-us-container {
+    /* padding-left: 64px;
+    padding-right: 64px; */
+    max-width: 100%; /* чтобы контейнер занимал всю ширину */
   }
 
-  .benefits-item {
-    margin-bottom: 0;
+  .about-us-section {
+    padding: 0 auto 120px;
   }
 
   .about-us-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 40px 24px;
+    gap: 24px;
+    justify-content: flex-start;
   }
 
-  .benefits-item {
+  /* .benefits-item {
     width: calc((100% - 72px) / 4);
+    margin-bottom: 0;
+  } */
+  .benefits-item {
+    flex: 0 1 calc((100% - 72px) / 4);
+    max-width: none;
+    min-width: 0;
+    margin-top: 24px;
+    padding: 0;
+    box-sizing: border-box;
   }
 
   .profession-benefits {
@@ -139,6 +170,7 @@
     font-size: 28px;
     /* line-height: 39px; */
     line-height: 1.4;
+    white-space: normal;
   }
 
   .second-title {
