@@ -1,9 +1,14 @@
+
+.section-yoga-classes {
+padding-top: 64px;
+    padding-bottom: 64px;
+}
+
 .section-yoga-classes .container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 64px;
-  padding-bottom: 64px;
+  
 }
 
 .yoga-cl-text.top {
@@ -118,7 +123,7 @@
 }
 
 @media screen and (min-width: 768px) {
-  .section-yoga-classes .container {
+  .section-yoga-classes {
     padding-top: 40px;
     padding-bottom: 40px;
   }
@@ -172,7 +177,7 @@
 }
 
 @media screen and (min-width: 1336px) {
-  .section-yoga-classes .container {
+  .section-yoga-classes {
     padding-bottom: 112px;
     padding-top: 112px;
   }
