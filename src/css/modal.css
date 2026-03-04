@@ -236,3 +236,11 @@
     margin: 0 auto;
   }
 }
+
+@media screen and (min-width: 1336px) {
+  .modal {
+    padding: 64px;
+
+    width: 768px;
+  }
+}
