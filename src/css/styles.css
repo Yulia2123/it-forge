@@ -21,3 +21,6 @@
 @import url('./pricing.css');
 @import url('./footer.css');
 @import url('./header-modal.css');
+
+/* Modal style  */
+@import url('./modal.css');
