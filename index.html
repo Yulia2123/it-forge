@@ -21,7 +21,7 @@
       rel="stylesheet"
     />
     <script type="module" crossorigin src="/it-forge/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/it-forge/assets/index-wuWQ0K8H.css">
+    <link rel="stylesheet" crossorigin href="/it-forge/assets/index-lkS2yenA.css">
   </head>
   <body>
     <header>
@@ -40,7 +40,7 @@
           <li class="header-nav-item"><a href="#pricing">Pricing</a></li>
           <li class="header-nav-item"><a href="#contacts">Contacts</a></li>
         </ul>
-        <button class="burger-menu" type="button" data-modal-open>
+        <button class="burger-menu" type="button" data-header-open>
           <svg class="burger-button-svg" width="24" height="24">
             <use href="/it-forge/assets/svgsprite-BxXL03Lo.svg#icon-menu"></use>
           </svg>
@@ -913,7 +913,7 @@
                 class="text-field-footer"
                 type="email"
                 name="email-footer"
-                placeholder="Placeholder"
+                placeholder="Email"
                 pattern="[a-zA-Z0-9_.-]+@[a-zA-Z0-9_.-]+\.[a-zA-Z]{2,8}"
                 title="example@mail.com"
                 required
@@ -933,18 +933,22 @@
           <ul class="link-footer">
             <li>
               <div class="box-link-footer">
-                <a href="#hero">Yoga Classes</a>
+                <a class="text-link" href="#hero">Yoga Classes</a>
               </div>
             </li>
             <li>
-              <div class="box-link-footer"><a href="#team">Team</a></div>
-            </li>
-            <li>
-              <div class="box-link-footer"><a href="#pricing">Pricing</a></div>
+              <div class="box-link-footer">
+                <a class="text-link" href="#team">Team</a>
+              </div>
             </li>
             <li>
               <div class="box-link-footer">
-                <a href="#contacts">Contacts</a>
+                <a class="text-link" href="#pricing">Pricing</a>
+              </div>
+            </li>
+            <li>
+              <div class="box-link-footer">
+                <a class="text-link" href="#contacts">Contacts</a>
               </div>
             </li>
           </ul>
@@ -957,7 +961,7 @@
                 <a
                   href="https://www.facebook.com/"
                   target="_blank"
-                  class="icon-link"
+                  class="icon-link-footer"
                 >
                   <svg width="24" height="24">
                     <use href="/it-forge/assets/svgsprite-BxXL03Lo.svg#icon-facebook"></use>
@@ -971,7 +975,7 @@
                 <a
                   href="https://www.instagram.com/"
                   target="_blank"
-                  class="icon-link"
+                  class="icon-link-footer"
                 >
                   <svg width="24" height="24">
                     <use href="/it-forge/assets/svgsprite-BxXL03Lo.svg#icon-instagram"></use>
@@ -985,7 +989,7 @@
                 <a
                   href="https://www.linkedin.com/"
                   target="_blank"
-                  class="icon-link"
+                  class="icon-link-footer"
                 >
                   <svg width="24" height="24">
                     <use href="/it-forge/assets/svgsprite-BxXL03Lo.svg#icon-linkedin"></use>
@@ -999,7 +1003,7 @@
                 <a
                   href="https://www.youtube.com/"
                   target="_blank"
-                  class="icon-link"
+                  class="icon-link-footer"
                 >
                   <svg width="24" height="24">
                     <use href="/it-forge/assets/svgsprite-BxXL03Lo.svg#icon-youtube"></use>
@@ -1181,6 +1185,36 @@
   </div>
 </div>
 
+
+    <div class="header-modal-menu" data-modal-header>
+  <div class="container header-modal-cont-wrapper">
+    <div class="header-modal-nav">
+      <button class="header-modal-close" type="button" data-header-close>
+        <svg class="header-modal-close-svg" width="24" height="24">
+          <use href="/it-forge/assets/svgsprite-BxXL03Lo.svg#icon-close"></use>
+        </svg>
+      </button>
+      <a href="../index.html" class="header-logo-link">
+        <svg class="site-logo" width="84" height="36">
+          <use href="/it-forge/assets/svgsprite-BxXL03Lo.svg#icon-logo"></use>
+        </svg>
+      </a>
+      <a href="#pricing" class="join-now-link">Join now</a>
+    </div>
+    <div class="modal-menu-links-wrapper">
+      <ul class="modal-header-nav-list">
+        <li class="modal-header-nav-item"><a href="#hero">Yoga Classes</a></li>
+        <li class="modal-header-nav-item"><a href="#team">Team</a></li>
+        <li class="modal-header-nav-item">
+          <a href="#testimonials">Testimonials</a>
+        </li>
+        <li class="modal-header-nav-item"><a href="#pricing">Pricing</a></li>
+        <li class="modal-header-nav-item"><a href="#contacts">Contacts</a></li>
+      </ul>
+      <a href="#pricing" class="modal-join-now-link">Join now</a>
+    </div>
+  </div>
+</div>
 
   </body>
 </html>
