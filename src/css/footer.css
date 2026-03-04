@@ -1,4 +1,3 @@
-
 footer * {
   font-family: 'Sarabun', sans-serif;
 }
@@ -64,8 +63,7 @@ footer * {
   outline: none;
   font-size: 16px;
   line-height: 1.6;
-  transition:
-    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -108,8 +106,7 @@ footer * {
   line-height: 1.6;
   display: block;
   margin-bottom: 12px;
-  transition:
-    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   outline: none;
@@ -256,8 +253,9 @@ footer * {
   }
 
   .footer {
-    padding-top: 64px;
-    padding-bottom: 64px;
+    padding: 64px;
+    /* padding-top: 64px;
+    padding-bottom: 64px; */
   }
 
   .box-footer {
@@ -291,11 +289,12 @@ footer * {
     max-width: 371px;
     height: 202px;
     margin-top: 0;
+    /* gap: 40px; */
   }
 
   .quick-links,
   .social-connect {
-    width: 165px;
+    width: 135px;
   }
 
   .box-link-footer,
