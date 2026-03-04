@@ -1,48 +1,50 @@
-<div class="modal-overlay" data-modal-basic>
+<div class="modal-overlay" id="modal-pro">
   <div class="modal">
     <button class="modal-close-btn" type="button" data-modal-close>
       <svg class="modal-close-icon" width="32" height="32">
         <use href="/img/svgsprit.svg#icon-close"></use>
       </svg>
     </button>
-    <h3>Join Now</h3>
-    <h3 class="pricing-item-title">8 Sessions Package</h3>
-    <p class="pricing-item-price">$65</p>
+    <h3 class="modal-title">Join Now</h3>
+    <h3 class="modal-item-title">8 Sessions Package</h3>
+    <p class="modal-item-price">$65</p>
     <form>
       <div class="input-group">
-        <label for="username" class="modal-label">Your Name</label>
+        <label for="username-pro" class="modal-label">Your Name</label>
         <div class="input-container">
           <input
             type="text"
             name="Name"
-            id="username"
+            id="username-pro"
             class="modal-input"
             placeholder="Enter your name"
           />
         </div>
       </div>
-      <div class="input-group">
-        <label for="email" class="modal-label">Email</label>
-        <div class="input-container">
-          <input
-            type="text"
-            name="Email"
-            id="email"
-            class="modal-input"
-            placeholder="Enter your email"
-          />
+      <div class="input-group-row">
+        <div class="input-group">
+          <label for="email-pro" class="modal-label">Email</label>
+          <div class="input-container">
+            <input
+              type="email"
+              name="Email"
+              id="email-pro"
+              class="modal-input"
+              placeholder="Enter your email"
+            />
+          </div>
         </div>
-      </div>
-      <div class="input-group">
-        <label for="phone" class="modal-label">Phone number</label>
-        <div class="input-container">
-          <input
-            type="text"
-            name="Phone"
-            id="phone"
-            class="modal-input"
-            placeholder="Enter your phone number"
-          />
+        <div class="input-group">
+          <label for="phone-pro" class="modal-label">Phone number</label>
+          <div class="input-container">
+            <input
+              type="tel"
+              name="Phone"
+              id="phone-pro"
+              class="modal-input"
+              placeholder="Enter your phone number"
+            />
+          </div>
         </div>
       </div>
       <button type="submit" class="modal-submit-btn">Go to checkout</button>
