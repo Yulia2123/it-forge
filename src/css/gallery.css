@@ -95,6 +95,7 @@
     .gallery-general-container{
         padding-left: 64px;
         padding-right: 64px;
+        max-width: 1440px;
     }
 
     .gallery-container{
