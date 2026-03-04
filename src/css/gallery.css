@@ -2,8 +2,13 @@
 
 .gallery-section{
     width: 100%;
-    padding: 64px 20px;
+    padding: 64px 0;
     background-color: #f2fafa;
+}
+
+.gallery-general-container{
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .gallery-container{
@@ -60,7 +65,12 @@
 
 @media screen and (min-width: 768px) {
     .gallery-section{
-        padding: 40px 32px;
+        padding: 40px 0;
+    }
+
+    .gallery-general-container{
+        padding-left: 32px;
+        padding-right: 32px;
     }
     
     .gallery-container{
@@ -79,7 +89,12 @@
 
 @media screen and (min-width: 1336px) {
     .gallery-section{
-        padding: 112px 64px;
+        padding: 112px 0;
+    }
+
+    .gallery-general-container{
+        padding-left: 64px;
+        padding-right: 64px;
     }
 
     .gallery-container{
