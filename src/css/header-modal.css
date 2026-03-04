@@ -8,6 +8,7 @@
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
+  transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-modal-nav {
   display: flex;
@@ -52,20 +53,23 @@
   flex-direction: column;
   row-gap: 12px;
 }
+.header-modal-nav {
+    align-items: center;
+}
 .is-open {
   opacity: 1;
   pointer-events: all;
   visibility: visible;
+}
+.header-modal-close{
+    width: 48px;
+    height: 48px;
 }
 @media screen and (min-width: 768px) {
   .modal-join-now-link {
     width: 204px;
     height: 46px;
   }
-  .header-menu {
-        padding-top: 18px;
-        padding-bottom: 18px;
-}
 }
 
 
